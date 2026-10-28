@@ -36,7 +36,115 @@
       position: absolute;
       top: 50px;
       left: 40px;
+      font-family: "Lucida Console", "Courier New", monospace;
     }
+
+    .frame {
+      width: 170px;
+      height: 200px;
+      border: 5px solid #FFFF00;
+      border-radius: 20px;
+      position: absolute;
+      top: 150px;
+      left: 100px;
+    }
+
+    .frame:hover {
+      border: 10px solid #00FFFF;
+    }
+
+
+    .frametext {
+      position: absolute;
+      top: 350px;
+      left: 100px;
+      width: 170px;
+      color: #FFFF00;
+      font-family: "Lucida Console", "Courier New", monospace;
+      border: 5px solid #FFFF00;
+      border-radius: 20px;
+      font-size: 15px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .frametext:hover {
+      border: 10px solid #00FFFF;
+      font-weight: bolder;
+      color: #00FFFF;
+    }
+
+    .frame2 {
+      width: 170px;
+      height: 200px;
+      border: 5px solid #FFFF00;
+      border-radius: 20px;
+      position: absolute;
+      top: 150px;
+      left: 350px;
+    }
+
+    .frame2:hover {
+      border: 10px solid #00FFFF;
+    }
+
+
+    .frametext2 {
+      position: absolute;
+      top: 350px;
+      left: 350px;
+      width: 170px;
+      color: #FFFF00;
+      font-family: "Lucida Console", "Courier New", monospace;
+      border: 5px solid #FFFF00;
+      border-radius: 20px;
+      font-size: 15px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .frametext2:hover {
+      border: 10px solid #00FFFF;
+      font-weight: bolder;
+      color: #00FFFF;
+    }
+
+    .frameS {
+      width: 170px;
+      height: 200px;
+      border: 5px solid #ff00ff;
+      border-radius: 20px;
+      position: absolute;
+      top: 150px;
+      left: 580px;
+    }
+
+    .frameS:hover {
+      border: 10px solid #00FFFF;
+    }
+
+
+    .frametextS {
+      position: absolute;
+      top: 350px;
+      left: 580px;
+      width: 170px;
+      color: #FFFF00;
+      font-family: "Lucida Console", "Courier New", monospace;
+      border: 5px solid #ff00ff;
+      border-radius: 20px;
+      font-size: 15px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .frametextS:hover {
+      border: 10px solid #00FFFF;
+      font-weight: bolder;
+      color: #00FFFF;
+    }
+
+
 
 
 
@@ -53,10 +161,93 @@
 
 <a href="index.html" class="back"> << Back</a>
 
+<a href="Canlist/can-1.html">
+  <p class="frametext">Celsius Tropical Vibe</p>
+  <img src="Frames/can-1.jpg" class="frame">
+</a>
+
+<a href="Canlist/can-2.html">
+  <p class="frametext2">Celsius Strawberry Lemonade</p>
+  <img src="Frames/can-2.jpg" class="frame2">
+</a>
+
+<a href="Canlist/can-s.html">
+  <p class="frametextS">Celsius Sparkling Winter Spritz Vibe</p>
+  <img src="Frames/can-s.jpg" class="frameS">
+</a>
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <!-- <script src="script.js"></script> -->
 <script>
   // JS
+  //
+  // const hoverImage = document.getElementById('frame');
+  // const targetText = document.getElementById('frametext');
+  // const originalText = targetText.textContent;
+
+  //
+  // hoverImage.addEventListener('mouseenter', () => { // change elements
+  //   targetText.textContent = "View";
+  //   targetText.style.color = "#00FFF0";
+  //   targetText.style.border = "10px solid #00FFFF";
+  // });
+  //
+  // hoverImage.addEventListener('mouseleave', () => {
+  //   targetText.textContent = originalText;
+  //   targetText.style.color = "#FFFF00";
+  //   targetText.style.borderColor = "#FFFF00";
+  //   targetText.style.border = "5px solid #FFFF00";
+  // });
+  //
+  // targetText.addEventListener('mouseenter', () => {
+  //   targetText.textContent = "View";
+  //   targetText.style.color = "#00FFF0";
+  //
+  // });
+  //
+  // targetText.addEventListener('mouseleave', () => {
+  //   targetText.textContent = originalText;
+  //   targetText.style.color = "#FFFF00";
+  //   hoverImage.style.borderColor = "#FFFF00";
+  //   hoverImage.style.border = "5px solid #FFFF00";
+  //   targetText.style.borderColor = "#FFFF00";
+  //   targetText.style.border = "5px solid #FFFF00";
+  // });
+
+  //
+  //
+  // hoverImage.addEventListener('mouseenter', () => { // image style  (vvv)
+  //   targetText.textContent = "View";
+  //   targetText.style.color = "#00FFF0";
+  //   targetText.style.border = "10px solid #00FFFF";
+  //
+  // });
+  //
+  // hoverImage.addEventListener('mouseleave', () => {
+  //   targetText.textContent = originalText;
+  //   targetText.style.color = "#FFFF00";
+  //   targetText.style.borderColor = "#FFFF00";
+  //   targetText.style.border = "5px solid #FFFF00";
+  // });
+  //
+  // targetText.addEventListener('mouseenter', () => { // text style  (vvv)
+  //   targetText.textContent = "View";
+  //   targetText.style.color = "#00FFF0";
+  //   targetText.style.border = "10px solid #00FFFF";
+  // });
+  //
+  // targetText.addEventListener('mouseleave', () => {
+  //   targetText.textContent = originalText;
+  //   targetText.style.color = "#FFFF00";
+  //   targetText.style.border = "5px solid #FFFF00";
+  // });
+  //
+  //
+
+
 
 
 
